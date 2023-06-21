@@ -1,20 +1,33 @@
 with source as 
 (
-    select 
+      select 
     date
-    ,ad_id
-    ,ad_status
-    ,ad_text
-    ,channel
-    ,impressions 
-    ,clicks
-    ,rt_installs
-    ,video_views
-    ,purchase
-    ,registrations
     ,add_to_cart
-    ,conversions
+    ,clicks 
+    ,null as comments 
+    ,null as engagements
+    ,impressions
+    ,skan_app_install as installs 
+    ,null as likes
+    ,null as link_clicks
+    ,null as post_click_conversions
+    ,null as post_view_conversions
+    ,null as posts
+    , purchase
+    ,registrations 
+    ,null as revenue
+    ,null as shares
     ,spend
+    ,conversions total_conversions
+    ,video_views
+    ,ad_id
+    ,adgroup_id adset_id
+    ,campaign_id
+    ,channel
+    ,null as creative_id
+    ,null as placement_id
+
+    
      from {{ source('bigquery','src_ads_tiktok_ads_all_data') }}
 )
 

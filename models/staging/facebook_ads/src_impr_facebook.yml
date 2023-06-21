@@ -2,8 +2,9 @@ version: 2
 
 sources:
   - name: bigquery
-    schema: impravado 
+    schema: dbt_anyssambayev 
     database: golden-tempest-390419
     tables:
       - name: src_ads_creative_facebook_all_data
+    
     

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bigquery
+    schema: impravado 
+    database: golden-tempest-390419
+    tables:
+      - name: src_ads_tiktok_ads_all_data
+    

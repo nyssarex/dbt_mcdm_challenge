@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bigquery
+    schema: dbt_anyssambayev 
+    database: golden-tempest-390419
+    tables:
+      - name: src_ads_bing_all_data
+    
